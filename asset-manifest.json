@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/AirBlink-Task1/static/css/main.19776023.css",
-    "main.js": "/AirBlink-Task1/static/js/main.8558d881.js",
+    "main.js": "/AirBlink-Task1/static/js/main.81ac389b.js",
     "index.html": "/AirBlink-Task1/index.html",
     "main.19776023.css.map": "/AirBlink-Task1/static/css/main.19776023.css.map",
-    "main.8558d881.js.map": "/AirBlink-Task1/static/js/main.8558d881.js.map"
+    "main.81ac389b.js.map": "/AirBlink-Task1/static/js/main.81ac389b.js.map"
   },
   "entrypoints": [
     "static/css/main.19776023.css",
-    "static/js/main.8558d881.js"
+    "static/js/main.81ac389b.js"
   ]
 }
