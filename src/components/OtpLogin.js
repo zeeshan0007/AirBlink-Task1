@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from 'react';
-import firebase from 'firebase/compat/app';
-import { auth } from '../firebase_setup/firebase';
 import { getAuth, RecaptchaVerifier, signInWithPhoneNumber } from "firebase/auth";
 import '../App.css'
+
 const OtpLogin = () => {
   const [phone, setPhone] = useState('');
   const [verificationCode, setVerificationCode] = useState('');
-  const [verificationId, setVerificationId] = useState('');
   const [recaptchaVerifier, setRecaptchaVerifier] = useState(null);
   const [isCaptchaConfigured, setIsCaptchaConfigured] = useState(false);
 
@@ -43,7 +41,7 @@ const OtpLogin = () => {
   
       const confirmationResult = await signInWithPhoneNumber(auth, phoneNumber, appVerifier);
       window.confirmationResult = confirmationResult;
-      setVerificationId(confirmationResult.verificationId);
+    
       alert("Sms is being sent to your number with the verification code");
     } catch (error) {
       console.log(error, "Some error occurred");
